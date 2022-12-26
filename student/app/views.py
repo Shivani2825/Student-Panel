@@ -3,6 +3,7 @@ from django.contrib.auth.hashers import check_password,make_password
 from .models import User, Course, Student, Teacher
 from django.http import  HttpResponse
 from django.contrib import messages
+from django.contrib import auth
 
 # Create your views here.
 def user(request):
@@ -216,5 +217,8 @@ def deleteteacher(request):
     return render(request,'teacher.html',{'teacher':teacher})
 
 # Logout---------------------------------------------------------------------------------------
-# def logout(request):
+def logout(request):
+    auth.logout(request)
+    messages.warning(request,'sucessfully logout')
+    return redirect('/')
 
