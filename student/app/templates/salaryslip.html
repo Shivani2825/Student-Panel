@@ -10,6 +10,7 @@
   <title>
     Satkar Courses
   </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
    <!--     Fonts and icons     -->
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
    <!-- Nucleo Icons -->
@@ -20,7 +21,7 @@
    <!-- Material Icons -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
    <!-- CSS Files -->
-   <link id="pagestyle" href="{% static 'css/material-dashboard.css' %}" rel="stylesheet" />>
+   <link id="pagestyle" href="{% static 'css/material-dashboard.css' %}" rel="stylesheet" />
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
@@ -48,34 +49,33 @@
         </li>
        
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="/teacher/">
+          <a class="nav-link text-white" href="/teacher/">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">receipt_long</i>
             </div>
             <span class="nav-link-text ms-1">Teacher</span>
           </a>
         </li>
-        
         <li class="nav-item">
-          <a class="nav-link text-white" href="/salaryslip/">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
-                  <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
-                </svg>
-            </div>
-            <span class="nav-link-text ms-1">Salary Slip</span>
-          </a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link text-white " href="/student/">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                </svg>
-            </div>
-            <span class="nav-link-text ms-1">All Students</span>
-          </a>
+            <a class="nav-link text-white active bg-gradient-primary" href="/salaryslip/">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                  </svg>
+              </div>
+              <span class="nav-link-text ms-1">Salary Slip</span>
+            </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link text-white " href="/student/">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                  </svg>
+              </div>
+              <span class="nav-link-text ms-1">All Students</span>
+            </a>
+          </li>
         <li class="nav-item">
           <a class="nav-link text-white " href="/courses/">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -129,7 +129,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Dashboard</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Teacher</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Salary Slip</li>
           </ol>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
@@ -158,32 +158,33 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col-xl-12 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-header p-3 pt-2">
-              <div
-                class="icon icon-lg icon-shape bg-gradient-info shadow-dark text-center border-radius-xl mt-n4 position-absolute">
-                <i class="material-icons opacity-10">weekend</i>
-              </div>
-              <div class="text-end pt-1">
-                <a class="btn bg-gradient-dark mb-0" href="{%static 'javascript:;'}" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"><i class="material-icons text-sm">add</i>Add Teacher</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
+    <!-- <div class="container-fluid py-4"> -->
+      <!-- <div class="row"> -->
+        <!-- <div class="col-xl-12 col-sm-6 mb-xl-0 mb-4"> -->
+          <!-- <div class="card"> -->
+            <!-- <div class="card-header p-3 pt-2"> -->
+              <!-- <div -->
+                <!-- class="icon icon-lg icon-shape bg-gradient-info shadow-dark text-center border-radius-xl mt-n4 position-absolute"> -->
+                <!-- <i class="material-icons opacity-10">weekend</i> -->
+              <!-- </div> -->
+<!--  -->
+              <!-- <div class="text-end pt-1"> -->
+                <!-- <a class="btn bg-gradient-dark mb-0" href="{%static 'javascript:;'}" data-bs-toggle="modal" -->
+                  <!-- data-bs-target="#exampleModal"><i class="material-icons text-sm">add</i>Add Teacher</a> -->
+              <!-- </div> -->
+            <!-- </div> -->
+<!--  -->
+          <!-- </div> -->
+        <!-- </div> -->
+<!--  -->
+      <!-- </div> -->
       <div class="row mt-4 mb-4">
         <div class="col-lg-12 col-md-6 mb-md-0 mb-4">
           <div class="card">
             <div class="card-header pb-0">
               <div class="row">
                 <div class="col-lg-6 col-7">
-                  <h6>Total Teacher</h6>
+                  <h6>Salary Slip</h6>
                 </div>
 
               </div>
@@ -195,32 +196,33 @@
                   <thead>
 
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> Name</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Email</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Mobile
-                        No.</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Education
-                      </th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Join Date
-                      </th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Work Experience
-                      </th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                        CTC</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> Teacher Name</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Salary Month</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Amount</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deduction</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Net Salary</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                      
                     </tr>
                   </thead>
                   <tbody>
                     {% for i in teacher %}
                     <tr>
-                      <td class="align-middle text-sm">{{i.teachername}}</td>
-                      <td class="align-middle text-sm">{{i.teacheremail}}</td>
-                      <td class="align-middle text-sm">{{i.teachermobile}}</td>
-                      <td class="align-middle text-sm">{{i.education}}</td>
-                      <td class="align-middle text-sm">{{i.joindate}}</td>
-                      <td class="align-middle text-sm">{{i.workexp}}</td>
-                      <td class="align-middle text-sm">{{i.ctc}}</td>
-                      <td> <a href="/update_tech/{{i.id}}/" class="btn btn-primary" >Update</a> </td>
-                      <td><a href="/deleteteacher?tid={{i.id}}" class="btn btn-primary">delete</a></td>                  
+                      
+                      <td class="text-center align-middle text-sm">{{i.teachername}}</td>
+                      <td class="text-center align-middle text-sm">-</td>
+                      <td class="text-center align-middle text-sm">-</td>
+                      <td class="text-center align-middle text-sm">-</td>
+                      <td class="text-center align-middle text-sm">-</td>
+                      <!-- <td class="align-middle text-sm">{{i.workexp}}</td> -->
+                      <!-- <td class="align-middle text-sm">{{i.ctc}}</td> -->
+                      <td class="text-center"> <a href="/update_tech/{{i.id}}/" class="btn btn-primary" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                      </svg></a>
+                      <a class="btn btn-primary" href="{%static 'javascript:;'}" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                          </svg></a></td>                  
                     </tr>
 
                     {% endfor%}
@@ -240,106 +242,34 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Add Teacher</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Select Month</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="card-body">
-                <form role="form" action="/addteacher/" method="POST">
-                  {% csrf_token %}
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-outline mb-3">
-                        <label class="form-label"></label>
-                        <input type="text" class="form-control" onfocus="focused(this)" placeholder="name" name="name" onfocusout="defocused(this)">
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-outline mb-3">
-                        <label class="form-label"></label>
-                        <input type="email" class="form-control" onfocus="focused(this)"   placeholder="Email" name="email" onfocusout="defocused(this)">
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-outline mb-3">
-                        <label class="form-label"></label>
-                        <input type="number" class="form-control" onfocus="focused(this)" placeholder="Mobile No." name="mobile" onfocusout="defocused(this)">
-                      </div>
-                    </div>
+                <table>
+                <tr>
+                <td class="p-3" > <a href="#" class="btn btn-primary" >Jan 2022</a> </td>
+                <td class="p-3"> <a href="#" class="btn btn-primary " >Feb 2022</a> </td>
+                <td class="p-3"> <a href="#" class="btn btn-primary" >Mar 2022</a> </td>
+                </tr>
+                <tr>
+                  <td class="p-3"> <a href="#" class="btn btn-primary ">Apr 2022</a> </td>
+                  <td class="p-3"> <a href="#" class="btn btn-primary ">May 2022</a> </td>
+                  <td class="p-3"> <a href="#" class="btn btn-primary" >Jun 2022</a> </td>
+                </tr>
+                 <tr>
+                    <td class="p-3"> <a href="#" class="btn btn-primary" >Jul 2022</a> </td>
+                    <td class="p-3"> <a href="#" class="btn btn-primary " >Aug 2022</a> </td>
+                    <td class="p-3"> <a href="#" class="btn btn-primary " >Sep 2022</a> </td>
+                    </tr>
+                    <tr>
+                      <td class="p-3"> <a href="#" class="btn btn-primary" >Oct 2022</a> </td>
+                      <td class="p-3"> <a href="#" class="btn btn-primary" >Nav 2022</a> </td>
+                      <td class="p-3"> <a href="#" class="btn btn-primary" >Dec 2022</a> </td>
+                      </tr>
+                    </table>
 
-                    <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-outline mb-3">
-                        <label class="form-label"></label>
-                        <input type="text" class="form-control" onfocus="focused(this)" placeholder="Education" name="education" onfocusout="defocused(this)">
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="input-group input-group-outline mb-3">
-                          <label class="form-label"></label>
-                          <input type="date" class="form-control" onfocus="focused(this)" placeholder="Join Date" name="joindate" onfocusout="defocused(this)">
-                        </div>
-                      </div>
-
-                    <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-outline mb-3">
-                        <label class="form-label"></label>
-                        <input type="text" class="form-control" onfocus="focused(this)" name="workexp" placeholder="Work Experience" onfocusout="defocused(this)">
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="input-group input-group-outline mb-3">
-                          <label class="form-label"></label>
-                          <input type="text" class="form-control" onfocus="focused(this)" name="ctc" placeholder="ctc" onfocusout="defocused(this)">
-                        </div>
-                      </div>
-
-
-                   
-                   <!-- <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-outline mb-3">
-                        <select class="form-select form-control" onfocus="focused(this)" onfocusout="defocused(this)"
-                          aria-label="Default select example">
-                          <option selected>Fees</option>
-                          <option value="13k">13k</option>
-                          <option value="15k">15k</option>
-                          <option value=30k">30k</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                      <div class="input-group input-group-outline mb-3">
-                        <select class="form-select form-control" onfocus="focused(this)" onfocusout="defocused(this)"
-                          aria-label="Default select example">
-                          <option selected>Duration</option>
-                          <option value="3 Months">3 Months</option>
-                          <option value="6 Months">6 Months</option>
-                          <option value="9 Months">9 Months</option>
-                          <option value="12 Months">12 Months</option>
-
-                        </select>
-                      </div>
-                    </div>-->
-
-                    <!-- <div class="mb-3">
-                      <label for="formFile" class="form-label">Default file input example</label>
-                      
-                    </div> -->
-                    
-                    <!-- <div class="input-group input-group-outline mb-3"> -->
-                      <!-- <textarea class="form-control col-lg-12 col-md-6" placeholder="Leave a comment here" -->
-                      <!-- id="floatingTextarea"></textarea> -->
-                    <!-- </div> -->
-                    
-                  
-
-                    <div class="text-center">
-                      <button type="Submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-2 mb-0"
-                        data-bs-dismiss="modal">Submit</button>
-                    </div>
-                  </div>
-                </form>
               </div>
             </div>
             <div class="modal-footer">

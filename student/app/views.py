@@ -20,6 +20,11 @@ def courses(request):
 def dashboard(request):
     return render(request,'dashboard.html')
 
+def salaryslip(request):
+    teacher=Teacher.objects.all()
+    return render(request,'salaryslip.html',{'teacher':teacher})
+    
+    
 def teacher(request):
     teacher=Teacher.objects.all()
     return render(request,'teacher.html',{'teacher':teacher})

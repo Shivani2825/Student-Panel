@@ -20,6 +20,7 @@ urlpatterns = [
     path('deleteteacher/',views.deleteteacher),
     path('update_tech/<int:uid>/',views.update_tech),
     path('updateteacherdata/',views.updateteacherdata),
+    path('salaryslip/',views.salaryslip),
     path('update_student/<int:uid>',views.update_student,name='update'),
     path('updatestu/<int:uid>',views.updatestu,name="update"),
     path('logout/',views.logout),
