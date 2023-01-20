@@ -23,6 +23,11 @@ def dashboard(request):
 def salaryslip(request):
     teacher=Teacher.objects.all()
     return render(request,'salaryslip.html',{'teacher':teacher})
+
+def salarydash(request):
+    # teacher=Teacher.objects.all()
+    return render(request,'salarydashboard.html')
+
     
     
 def teacher(request):
